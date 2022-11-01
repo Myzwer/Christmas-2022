@@ -1,0 +1,70 @@
+* {
+  font-family: "gotham", sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "gotham", sans-serif;
+  font-weight: 800;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+/* stylelint-disable selector-max-id */
+#particles-js {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+/* stylelint-enable selector-max-id */
+
+// Had to make this wonderful class because tailwind couldn't get its crap together
+// It isn't my fault.
+// I'm not salty.
+@media screen and (max-width: 767px) {
+  .tree-girl {
+    bottom: 0;
+    left: -7em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tree-girl {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+// Since tree girl up there is absolutely placed, she can't keep the section in place so when the form is submitted
+// it breaks and she gets crushed. This keeps the section stable after form submission.
+.min-height-form {
+  min-height: 550px;
+}
+
+@media screen and (min-width: 40em) {
+  .min-height-form {
+    min-height: 400px;
+  }
+}
+
+// Leading-relaxed is 8 feet apart and leading normal is on top of itself. This splits the difference
+// Tailwind's size classes ship a default line spacing with a higher specificity. So. important.
+.leading-ish {
+  line-height: 1.4 !important;
+}
+
+.qa a {
+  color: #ca453d;
+}
+
+// tailwind generates this but it gets stripped out in prod
+.text-green {
+  color: #1d5134;
+}

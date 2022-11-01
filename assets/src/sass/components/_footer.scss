@@ -1,0 +1,75 @@
+/*
+ * Footer SCSS
+ * ---------------------------
+ * This is the scss file to control the styles of the footer.
+ * Most of the "settings" are at the top, but dig around to change more specific things.
+ * The Color settings are at the top, but any other specific edits will need scss editing.
+ * This does follow mobile first design, so to edit tablet +, make sure you edit past the media query.
+ *
+*/
+
+/* Color Settings */
+$background-color: #ca453d;
+$color: #fdfbef;
+
+/* stylelint-disable max-nesting-depth */
+.footer {
+  background-color: $background-color;
+  box-sizing: border-box;
+  color: #fdfbef;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+
+  li {
+    display: block;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .footer {
+    li {
+      display: inline;
+
+      &:after {
+        content: " | ";
+      }
+
+      &:last-child:after {
+        content: "";
+      }
+    }
+  }
+}
+
+.footer-icons a,
+.footer-icons img {
+  background-color: #f4b470;
+  border-radius: 80px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 15px;
+  margin-right: 3px;
+  text-align: center;
+  width: 50px;
+}
+
+.footer-icons img {
+  box-shadow: none;
+  height: 20px;
+  margin-bottom: 5px;
+  margin-right: -2px;
+  width: 35px;
+}
+
+.copyright {
+  font-size: 0.8em;
+}
+/* stylelint-enable max-nesting-depth */
