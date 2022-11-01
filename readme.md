@@ -41,7 +41,7 @@ Let it snow is a wordpress theme designed to suit the needs of foothillschristma
 # 1-- Set up a local instance of Worpress in Local or something.
 # 2-- Clone this into your themes folder (as a new theme)
 
-$ git clone https://github.com/Myzwer/christmas-2021.git
+$ git clone https://github.com/Myzwer/christmas-2022.git
 
 # 2-- Edit the BrowserSync settings in `webpack.config.js`. Ya can't miss it.
 # 3-- Install yarn and all the project dependencies
