@@ -12,14 +12,14 @@
 /* stylelint-disable max-nesting-depth, selector-max-compound-selectors, selector-max-id, no-duplicate-selectors */
 
 // Navbar quick settings
-$content-width: 2000px; // How wide or narrow do you want the bar to be?
+$content-width: 1400px; // How wide or narrow do you want the bar to be?
 $breakpoint: 799px; // When do you want to switch from mobile to desktop?
 $nav-height: 70px; // How tall do you want the navbar to be?
-$nav-background: #ca453d; // What background color do you want?
+$nav-background: #9caf78; // What background color do you want?
 $nav-font-color: #fdfbef; // What primary font color?
-$link-hover-color: #cb362d; // What color when you hover?
-$button-color: #f4b470; // What background color do you want the button to be?
-$button-hover-color: #f1a750; // What hover color do you want the button to be?
+$link-hover-color: #be4f3b; // What color when you hover?
+$button-color: #be4f3b; // What background color do you want the button to be?
+$button-hover-color: #bd3e27; // What hover color do you want the button to be?
 
 // Outer navigation wrapper
 .navigation {
@@ -205,6 +205,58 @@ nav {
       transform: rotate(-45deg);
       width: 35px;
     }
+  }
+}
+
+.nav-list > li:last-of-type {
+  align-self: center;
+  background-color: $button-color;
+  color: #ffffff;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-list > li:last-of-type a {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+}
+
+.nav-list > li:last-of-type:hover a {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+}
+
+.nav-list > li:last-of-type:hover {
+  background: $button-hover-color;
+}
+
+.nav-list > li:last-of-type:active {
+  transform: scale(1.025);
+}
+
+@media screen and (min-width: $breakpoint) {
+  .nav-list > li:last-of-type {
+    border-radius: 10px;
+    margin-left: 6px;
+    margin-right: 10px;
+    margin-top: 12px;
+  }
+
+  .nav-list > .nav-list > li:last-of-type a {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .nav-list > li:last-of-type:hover a {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  nav ul li:last-of-type a,
+  nav ul li:last-of-type a:visited {
+    line-height: 10px;
+    padding: 15px;
   }
 }
 
