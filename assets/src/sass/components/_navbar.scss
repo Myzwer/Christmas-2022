@@ -13,9 +13,9 @@
 
 // Navbar quick settings
 $content-width: 1400px; // How wide or narrow do you want the bar to be?
-$breakpoint: 799px; // When do you want to switch from mobile to desktop?
+$breakpoint: 900px; // When do you want to switch from mobile to desktop?
 $nav-height: 70px; // How tall do you want the navbar to be?
-$nav-background: #9caf78; // What background color do you want?
+$nav-background: #41726e; // What background color do you want?
 $nav-font-color: #fdfbef; // What primary font color?
 $link-hover-color: #be4f3b; // What color when you hover?
 $button-color: #be4f3b; // What background color do you want the button to be?
@@ -121,7 +121,7 @@ nav {
   top: 0;
   width: $nav-height;
 }
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 900px) {
   // Hamburger nav visible on mobile only
   .nav-mobile {
     display: block;
