@@ -85,34 +85,6 @@ get_header(); ?>
     </div>
     <!-- End Header -->
 
-    <!-- Start Invite Section -->
-    <div class="bg-red p-5 relative">
-        <div class="lg:w-9/12 mx-auto">
-            <div class="border-2 border-white rounded-md md:p-5">
-                <div class="grid grid-cols-12 gap-4 lg:gap-4 py-4 text-white">
-
-                    <div class="col-span-12 md:col-span-4 px-4 z-5">
-                        <img class="rounded-md shadow-lg"
-                             src="<?php the_field('invite_image'); ?>"
-                             alt="Girl with smiling baby">
-                    </div>
-                    <div class="col-span-12 md:col-span-8 px-4 md:pt-10 z-5 relative">
-                        <div class="content-middle-medium">
-                            <h2 class="text-lg md:text-2xl lg:text-4xl uppercase font-black text-left"><?php the_field('invite_title'); ?></h2>
-                            <p class="text-md mb-2"><?php the_field('invite_blurb'); ?></p>
-                            <button id="two"
-                                    class="button mx-auto lg:mx-0 bg-yellow text-black rounded-full my-1 md:my-1 py-2 px-3 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out z-5">
-                                <?php the_field('button_title_1'); ?>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Invite Section -->
-
-
 
 <?php
 get_footer();
