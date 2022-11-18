@@ -65,14 +65,89 @@ get_header(); ?>
         <div class="text-center relative pt-24 lg:p-36 z-5">
             <img class="mx-auto w-11/12 md:w-8/12 lg:w-5/12"
                  src="<?php the_field('afc_logo'); ?>" alt="A Foothills Christmas Logo">
-            <h1 class="uppercase text-red text-2xl md:text-3xl py-5 px-10 z-5"><?php the_field('tagline'); ?></h1>
+            <h1 class="uppercase text-white text-2xl md:text-3xl py-5 px-10 z-5"><?php the_field('tagline'); ?></h1>
         </div>
-        <img class="hidden lg:block absolute left-36 bottom-3 z-5"
-             src="<?php the_field('rando_1'); ?>" alt="Man with boxes">
-        <img class="hidden lg:block absolute right-36 bottom-3 z-5"
-             src="<?php the_field('rando_2'); ?>" alt="Female with Box and bag">
     </div>
     <!-- End Header -->
+
+    <!-- Start Service Info -->
+    <div class="bg-no-repeat bg-scroll bg-cover relative" style="background:
+            url('<?php the_field('noise_background'); ?>') no-repeat bottom center scroll; background-size: cover; ">
+        <div class=" lg:max-w-6xl lg:text-center lg:mx-auto pt-10 p-5">
+            <h1 class="text-center uppercase text-black text-2xl pb-10">Pick which worship experience works best for
+                your family!</h1>
+
+            <div class="grid grid-cols-12 gap-4 lg:gap-4 py-4 text-black mb-10 text-center">
+                <div class="col-span-12">
+                    <h2 class="text-center uppercase text-black text-xl font-bold">maryville</h2>
+                </div>
+
+                <div class="col-span-12 md:col-span-4 mb-5">
+                    <div class="text-xl mb-3">
+                        <p>Friday, December 23</p>
+                        <p> 6:30pm</p>
+                        <p> Maryville Location</p>
+                    </div>
+                    <a
+                            href="#">
+                        <button class="mx-auto lg:mx-0 bg-yellow text-black font-bold rounded-md py-3 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                            Mark My Calendar
+                        </button>
+                    </a>
+                </div>
+
+                <div class="col-span-12 md:col-span-4 mb-5">
+                    <div class="text-xl mb-3">
+                        <p>Friday, December 23</p>
+                        <p> 6:30pm</p>
+                        <p> Maryville Location</p>
+                    </div>
+                    <a
+                            href="#">
+                        <button class="mx-auto lg:mx-0 bg-yellow text-black font-bold rounded-md py-3 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                            Mark My Calendar
+                        </button>
+                    </a>
+                </div>
+
+                <div class="col-span-12 md:col-span-4 mb-5">
+                    <div class="text-xl mb-3">
+                        <p>Friday, December 23</p>
+                        <p> 6:30pm</p>
+                        <p> Maryville Location</p>
+                    </div>
+                    <a
+                            href="#">
+                        <button class="mx-auto lg:mx-0 bg-yellow text-black font-bold rounded-md py-3 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                            Mark My Calendar
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 gap-4 lg:gap-4 py-4 text-black">
+                <div class="col-span-12">
+                    <h2 class="text-center uppercase text-black text-xl font-bold">knoxville</h2>
+                </div>
+
+                <div class="col-span-12 text-center">
+                    <div class="text-xl mb-3">
+                        <p>Friday, December 23</p>
+                        <p> 6:30pm</p>
+                        <p> Maryville Location</p>
+                    </div>
+                    <a
+                            href="#">
+                        <button class="mx-auto lg:mx-0 bg-yellow text-black font-bold rounded-md py-3 md:px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                            Mark My Calendar
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Service Info -->
 
 <?php
 get_footer();
