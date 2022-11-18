@@ -60,11 +60,12 @@ canvas {
   line-height: 1.4 !important;
 }
 
-.qa a {
-  color: #ca453d;
+.img-cards {
+  height: 30vh;
 }
 
-// tailwind generates this but it gets stripped out in prod
-.text-green {
-  color: #1d5134;
+@media screen and (min-width: 40em) {
+  .img-cards {
+    height: 70vh;
+  }
 }

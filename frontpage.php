@@ -149,5 +149,86 @@ get_header(); ?>
     </div>
     <!-- End Service Info -->
 
+    <!-- Start Split Section 1 -->
+    <div id = "experience" class="grid grid-cols-12">
+        <div class="col-span-12 md:col-span-6">
+            <div class="bg-no-repeat bg-scroll bg-cover relative img-cards" style="background:
+                    url('<?php the_field('img_1'); ?>') no-repeat center center scroll; background-size: cover;">
+            </div>
+        </div>
+
+        <div class="col-span-12 md:col-span-6 bg-green text-white relative">
+            <div class="content-middle-medium">
+                <div class="my-10 mx-5 md:mx-10">
+                    <h2 class="text-left uppercase text-xl font-bold">Join us for a special worship experience</h2>
+                    <p>We’re excited to celebrate the birth of Jesus together through worship with a special candlelight
+                        moment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Split Section 1 -->
+
+    <!-- Start Split Section 2 -->
+    <div class="grid grid-cols-12">
+        <div class="col-span-12 md:col-span-6 bg-yellow text-black relative order-2 md:order-1">
+            <div class="content-middle-medium">
+                <div class="my-10 mx-5 md:mx-10">
+                    <h2 class="text-left uppercase text-xl font-bold">Free Cookies</h2>
+                    <p>Moonshine Mountain Cookies are a gourmet cookie bakery located right here in East Tennessee. Their handcrafted small-batch cookies will keep you coming back for more!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-12 md:col-span-6 order-1 md:order-2">
+            <div class="bg-no-repeat bg-scroll bg-cover relative img-cards" style="background:
+                    url('<?php the_field('img_2'); ?>') no-repeat center center scroll; background-size: cover;">
+            </div>
+        </div>
+    </div>
+    <!-- End Split Section 2 -->
+
+    <!-- Start Split Section 3 -->
+    <div class="grid grid-cols-12">
+        <div class="col-span-12 md:col-span-6">
+            <div class="bg-no-repeat bg-scroll bg-cover relative img-cards" style="background:
+                    url('<?php the_field('img_3'); ?>') no-repeat center center scroll; background-size: cover;">
+            </div>
+        </div>
+
+        <div class="col-span-12 md:col-span-6 bg-green text-white relative">
+            <div class="content-middle-medium">
+                <div class="my-10 mx-5 md:mx-10">
+                    <h2 class="text-left uppercase text-xl font-bold">Hot Chocolate Bar</h2>
+                    <p>Nothing says "Christmas Season" like a warm cup of hot chocolate and some peppermint sticks. You won't want to miss this special treat at A Foothills Christmas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Split Section 3 -->
+
+    <!-- Start Split Section 4 -->
+    <div class="grid grid-cols-12">
+        <div class="col-span-12 md:col-span-6 bg-yellow text-black relative  order-2 md:order-1">
+            <div class="content-middle-medium">
+                <div class="my-10 mx-5 md:mx-10">
+                    <h2 class="text-left uppercase text-xl font-bold">Family Photobooth</h2>
+                    <p>Snap a photo of your family this Christmas at FC at our Christmas photo booth!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-12 md:col-span-6 order-1 md:order-2">
+            <div class="bg-no-repeat bg-scroll bg-cover relative img-cards" style="background:
+                    url('<?php the_field('img_4'); ?>') no-repeat center center scroll; background-size: cover;">
+            </div>
+        </div>
+    </div>
+    <!-- End Split Section 4 -->
+
 <?php
 get_footer();
