@@ -13,47 +13,6 @@
 
 get_header(); ?>
 
-    <!-- The Modal -->
-    <div id="modal-container">
-        <div class="modal-background">
-            <div class="modal">
-                <div class="modal-content">
-                    <div class="modal-top bg-no-repeat bg-scroll bg-cover relative"
-                         style="background: url('<?php the_field('modal_background'); ?>') center center;">
-
-                        <div class="modal-icon">
-                            <img src="<?php the_field('modal_icon'); ?>" alt="Foothills Church Icon">
-                        </div>
-                    </div>
-                    <div class="modal-inner">
-                        <p class="pb-5"><?php the_field('modal_text'); ?></p>
-
-                        <?php if (have_rows('main_button')): ?>
-                            <?php while (have_rows('main_button')): the_row(); ?>
-                                <a download
-                                   href="<?php the_sub_field('button_download'); ?>">
-                                    <button class="mx-auto lg:mx-0 w-full bg-yellow text-black font-bold rounded-full my-1 md:my-1 py-4 px-5 md:px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                                        <?php the_sub_field('button_text'); ?>
-                                    </button>
-                                </a>
-                            <?php endwhile; ?>
-                        <?php endif; ?>
-
-                        <?php if (have_rows('secondary_button')): ?>
-                            <?php while (have_rows('secondary_button')): the_row(); ?>
-                                <a href="<?php the_sub_field('button_link'); ?>">
-                                    <button class="mx-auto lg:mx-0 w-full border-black border-2 text-black font-bold rounded-full my-1 md:my-1 py-3 px-6 md:px-8 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                                        <?php the_sub_field('button_text'); ?>
-                                    </button>
-                                </a>
-                            <?php endwhile; ?>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End Modal-->
 
     <!-- Start Particles-->
     <div id="particles-js"></div>
@@ -74,8 +33,8 @@ get_header(); ?>
     <div class="bg-no-repeat bg-scroll bg-cover relative" style="background:
             url('<?php the_field('noise_background'); ?>') no-repeat bottom center scroll; background-size: cover; ">
         <div class=" lg:max-w-6xl lg:text-center lg:mx-auto pt-10 p-5">
-            <h1 class="text-center uppercase text-black text-2xl pb-10">Pick which worship experience works best for
-                your family!</h1>
+            <h1 class="text-center uppercase text-black text-2xl pb-10">Pick the worship experience that works best for your family
+                </h1>
 
             <div class="grid grid-cols-12 gap-4 lg:gap-4 py-4 text-black mb-10 text-center">
                 <div class="col-span-12">
@@ -91,7 +50,7 @@ get_header(); ?>
                     <a
                             href="#">
                         <button class="mx-auto lg:mx-0 bg-yellow text-black font-bold rounded-md py-3 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Mark My Calendar
+                            <i class="fa-solid fa-calendar-days"></i> Mark My Calendar
                         </button>
                     </a>
                 </div>
@@ -105,7 +64,7 @@ get_header(); ?>
                     <a
                             href="#">
                         <button class="mx-auto lg:mx-0 bg-yellow text-black font-bold rounded-md py-3 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Mark My Calendar
+                            <i class="fa-solid fa-calendar-days"></i> Mark My Calendar
                         </button>
                     </a>
                 </div>
@@ -119,7 +78,7 @@ get_header(); ?>
                     <a
                             href="#">
                         <button class="mx-auto lg:mx-0 bg-yellow text-black font-bold rounded-md py-3 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Mark My Calendar
+                            <i class="fa-solid fa-calendar-days"></i> Mark My Calendar
                         </button>
                     </a>
                 </div>
@@ -139,9 +98,13 @@ get_header(); ?>
                     <a
                             href="#">
                         <button class="mx-auto lg:mx-0 bg-yellow text-black font-bold rounded-md py-3 md:px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Mark My Calendar
+                            <i class="fa-solid fa-calendar-days"></i> Mark My Calendar
                         </button>
                     </a>
+                </div>
+
+                <div class="col-span-12 pt-10">
+                    <h2 class="text-center uppercase text-black text-lg font-bold">- We will not meet on Christmas Day -</h2>
                 </div>
 
             </div>
@@ -233,7 +196,7 @@ get_header(); ?>
     <!-- End Split Section 4 -->
 
     <!-- Start FTG Section -->
-    <div class="grid grid-cols-12">
+    <div id="ftg" class="grid grid-cols-12">
         <div class="col-span-12 bg-green text-white relative ">
             <div class=" lg:max-w-6xl lg:text-center lg:mx-auto pt-10 p-5">
                 <div class="my-10 mx-5 md:mx-10">
@@ -295,8 +258,8 @@ get_header(); ?>
     </div>
     <!-- End Directions Section -->
 
-    <!-- Start Service Info -->
-    <div class="bg-no-repeat bg-scroll bg-cover relative" style="background:
+    <!-- Start FAQ Section -->
+    <div id="faq"  class="bg-no-repeat bg-scroll bg-cover relative" style="background:
             url('<?php the_field('noise_background'); ?>') no-repeat bottom center scroll; background-size: cover; ">
         <div class=" lg:max-w-6xl lg:mx-auto pt-10 p-5">
             <h1 class="text-center uppercase text-black text-2xl">FAQ</h1>
@@ -365,7 +328,7 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <!-- End Service Info -->
+    <!-- End FAQ Section -->
 
 <?php
 get_footer();
