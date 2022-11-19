@@ -76,7 +76,7 @@ nav {
         text-decoration: none;
         &:hover {
           background: $link-hover-color;
-          color: $nav-font-color;
+          color: #ffffff;
         }
         &:not(:only-child):after {
           content: " ▾";
@@ -207,57 +207,4 @@ nav {
     }
   }
 }
-
-.nav-list > li:last-of-type {
-  align-self: center;
-  background-color: $button-color;
-  color: #ffffff;
-  cursor: pointer;
-  letter-spacing: 1px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: all 0.1s ease-in-out;
-}
-
-.nav-list > li:last-of-type a {
-  background-color: rgba(0, 0, 0, 0);
-  color: #ffffff;
-}
-
-.nav-list > li:last-of-type:hover a {
-  background-color: rgba(0, 0, 0, 0);
-  color: #ffffff;
-}
-
-.nav-list > li:last-of-type:hover {
-  background: $button-hover-color;
-}
-
-.nav-list > li:last-of-type:active {
-  transform: scale(1.025);
-}
-
-@media screen and (min-width: $breakpoint) {
-  .nav-list > li:last-of-type {
-    border-radius: 10px;
-    margin-left: 6px;
-    margin-right: 10px;
-    margin-top: 12px;
-  }
-
-  .nav-list > .nav-list > li:last-of-type a {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .nav-list > li:last-of-type:hover a {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  nav ul li:last-of-type a,
-  nav ul li:last-of-type a:visited {
-    line-height: 10px;
-    padding: 15px;
-  }
-}
-
 /* stylelint-enable max-nesting-depth, selector-max-compound-selectors, selector-max-id,  no-duplicate-selectors */
