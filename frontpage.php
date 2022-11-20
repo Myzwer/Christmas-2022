@@ -57,8 +57,8 @@ get_header(); ?>
 
                 <div class="col-span-12 md:col-span-4 mb-5">
                     <div class="text-xl mb-3">
-                        <p>Friday, December 23</p>
-                        <p> 6:30pm</p>
+                        <p>Saturday, December 24</p>
+                        <p> 3:00pm</p>
                         <p> Maryville Location</p>
                     </div>
                     <a download
@@ -71,8 +71,8 @@ get_header(); ?>
 
                 <div class="col-span-12 md:col-span-4 mb-5">
                     <div class="text-xl mb-3">
-                        <p>Friday, December 23</p>
-                        <p> 6:30pm</p>
+                        <p>Saturday, December 24</p>
+                        <p> 5:00pm</p>
                         <p> Maryville Location</p>
                     </div>
                     <a download
@@ -91,9 +91,9 @@ get_header(); ?>
 
                 <div class="col-span-12 text-center">
                     <div class="text-xl mb-3">
-                        <p>Friday, December 23</p>
-                        <p> 6:30pm</p>
-                        <p> Maryville Location</p>
+                        <p>Saturday, December 24</p>
+                        <p> 5:00pm</p>
+                        <p> Knoxville Location</p>
                     </div>
                     <a download
                        href="<?php the_field('cal4'); ?>">
