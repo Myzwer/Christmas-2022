@@ -47,8 +47,8 @@ get_header(); ?>
                         <p> 6:30pm</p>
                         <p> Maryville Location</p>
                     </div>
-                    <a
-                            href="#">
+                    <a download
+                            href="<?php the_field('cal1'); ?>">
                         <button class="mx-auto lg:mx-0 bg-yellow text-black font-bold rounded-md py-3 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                             <i class="fa-solid fa-calendar-days"></i> Mark My Calendar
                         </button>
@@ -61,8 +61,8 @@ get_header(); ?>
                         <p> 6:30pm</p>
                         <p> Maryville Location</p>
                     </div>
-                    <a
-                            href="#">
+                    <a download
+                       href="<?php the_field('cal2'); ?>">
                         <button class="mx-auto lg:mx-0 bg-yellow text-black font-bold rounded-md py-3 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                             <i class="fa-solid fa-calendar-days"></i> Mark My Calendar
                         </button>
@@ -75,8 +75,8 @@ get_header(); ?>
                         <p> 6:30pm</p>
                         <p> Maryville Location</p>
                     </div>
-                    <a
-                            href="#">
+                    <a download
+                       href="<?php the_field('cal3'); ?>">
                         <button class="mx-auto lg:mx-0 bg-yellow text-black font-bold rounded-md py-3 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                             <i class="fa-solid fa-calendar-days"></i> Mark My Calendar
                         </button>
@@ -95,9 +95,9 @@ get_header(); ?>
                         <p> 6:30pm</p>
                         <p> Maryville Location</p>
                     </div>
-                    <a
-                            href="#">
-                        <button class="mx-auto lg:mx-0 bg-yellow text-black font-bold rounded-md py-3 md:px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    <a download
+                       href="<?php the_field('cal4'); ?>">
+                        <button class="mx-auto lg:mx-0 bg-yellow text-black font-bold rounded-md py-3 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                             <i class="fa-solid fa-calendar-days"></i> Mark My Calendar
                         </button>
                     </a>
@@ -217,9 +217,7 @@ get_header(); ?>
     <!-- Start Directions Section -->
     <div class="grid grid-cols-12">
         <div class="col-span-12 md:col-span-6">
-            <div class="bg-no-repeat bg-scroll bg-cover relative img-cards" style="background:
-                    url('<?php the_field('map_image'); ?>') no-repeat center center scroll; background-size: cover;">
-            </div>
+            <?php echo do_shortcode( '[wpgmza id="1"]' ); ?>
         </div>
 
         <div class="col-span-12 md:col-span-6 bg-yellow text-black relative">
@@ -229,26 +227,26 @@ get_header(); ?>
                     <div class="my-3">
                         <h3 class="font-bold text-lg">Maryville Location</h3>
                         <p>1551 W. Lamar Alexander Pkwy</p>
-                        <p>Maryville Tn, 37801</p>
+                        <p>Maryville TN, 37801</p>
                     </div>
                     <a
-                            href="#">
+                            href="<?php the_field('maryville_directions'); ?>" target="_blank">
                         <button class="mx-auto lg:mx-0 bg-green text-white font-bold rounded-md py-3 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Launch In Maps
+                            Launch In Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </button>
                     </a>
                 </div>
 
                 <div class="my-10 mx-5 md:mx-10">
                     <div class="my-3">
-                        <h3 class="font-bold text-lg">Maryville Location</h3>
-                        <p>1551 W. Lamar Alexander Pkwy</p>
-                        <p>Maryville Tn, 37801</p>
+                        <h3 class="font-bold text-lg">Knoxville Location</h3>
+                        <p>1000 Francis Rd</p>
+                        <p>Knoxville, TN 37909</p>
                     </div>
                     <a
-                            href="#">
+                            href="<?php the_field('knoxville_directions'); ?>" target="_blank">
                         <button class="mx-auto lg:mx-0 bg-green text-white font-bold rounded-md py-3 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Launch In Maps
+                            Launch In Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </button>
                     </a>
                 </div>
@@ -329,6 +327,12 @@ get_header(); ?>
         </div>
     </div>
     <!-- End FAQ Section -->
+
+
+<!--
+ - Get the map working
+ - Launch stuff
+-->
 
 <?php
 get_footer();
