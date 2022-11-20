@@ -198,7 +198,7 @@ get_header(); ?>
     <!-- Start FTG Section -->
     <div id="ftg" class="grid grid-cols-12">
         <div class="col-span-12 bg-green text-white relative ">
-            <div class=" lg:max-w-6xl lg:text-center lg:mx-auto pt-10 p-5">
+            <div class=" lg:max-w-6xl lg:text-center lg:mx-auto  md:p-5">
                 <div class="my-10 mx-5 md:mx-10">
                     <h2 class="uppercase text-2xl font-bold pb-5">First time at Foothills Church?</h2>
                     <p class="text-left">We know going to a new church can be intimidating, but we promise to do
